@@ -895,13 +895,22 @@ const PlanReady: NextPage = () => {
       </main>
 
       <div className={styles.fixedPayBar}>
-        <button
-          className={styles.getMyPlanButton}
-          onClick={handlePurchase}
-          disabled={isPaymentLoading}
-        >
-          {isPaymentLoading ? 'Завантаження...' : `Почати за ${price} грн`}
-        </button>
+        <div className={styles.fixedPayContent}>
+          <div className={styles.fixedPayText}>
+            <span className={styles.fixedPayIcon} aria-hidden="true">🔥</span>
+            <span className={styles.fixedPayLabel}>
+              Знижка 50% завершується сьогодні. Ціна зараз — {price} грн.
+            </span>
+          </div>
+
+          <button
+            className={styles.getMyPlanButton}
+            onClick={handlePurchase}
+            disabled={isPaymentLoading}
+          >
+            {isPaymentLoading ? 'Завантаження...' : 'Отримати план'}
+          </button>
+        </div>
       </div>
 
       <QuizFooter />
