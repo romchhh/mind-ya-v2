@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getPaymentFormData, type WayForPayProduct } from '@/lib/wayforpay';
 import { PRODUCT_NAME_SHORT } from '@/data/productDescription';
+import { appendEvent, getOrCreateSessionId } from '@/lib/analytics';
 
 type ResponseData = {
   success: boolean;
@@ -41,6 +42,27 @@ export default async function handler(
         amount: formData.amount,
         orderReference: formData.orderReference,
       });
+
+    try {
+      const sessionId = getOrCreateSessionId(req, res);
+      await appendEvent({
+        type: 'payment_attempt',
+        page: '/quiz/plan-ready',
+        label: 'wayforpay',
+        sessionId,
+        userAgent: req.headers['user-agent'] || '',
+        referer:
+          (req.headers.referer as string | undefined) ||
+          (req.headers.referrer as string | undefined) ||
+          '',
+        metadata: {
+          amount: price,
+          orderReference: formData.orderReference,
+        },
+      });
+    } catch (logError) {
+      console.error('Analytics payment_attempt log error:', logError);
+    }
   
 
     const normalizedFormData: Record<string, string | string[]> = {};

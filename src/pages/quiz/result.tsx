@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { NextPage } from 'next';
+import type { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
@@ -151,4 +151,13 @@ const Result: NextPage = () => {
 };
 
 export default Result;
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    redirect: {
+      destination: '/quiz/plan-ready',
+      permanent: false,
+    },
+  };
+};
 

@@ -3,6 +3,7 @@ import {
   verifyCallbackSignature,
   generateCallbackResponseSignature,
 } from '@/lib/wayforpay';
+import { appendEvent } from '@/lib/analytics';
 
 interface WayForPayCallbackBody {
   merchantAccount: string;
@@ -169,6 +170,41 @@ export default async function handler(
         reasonCode,
         reason: parsedBody.reason,
       });
+    }
+
+    try {
+      const baseEvent = {
+        page: '/quiz/plan-ready',
+        label: 'wayforpay',
+        sessionId: 'unknown', // callback не містить cookie, але нам важливі агреговані дані
+        userAgent: req.headers['user-agent'] || '',
+        referer:
+          (req.headers.referer as string | undefined) ||
+          (req.headers.referrer as string | undefined) ||
+          '',
+        metadata: {
+          orderReference,
+          amount,
+          currency,
+          transactionStatus,
+          reasonCode,
+          reason: parsedBody.reason,
+        },
+      } as const;
+
+      if (transactionStatus === 'Approved') {
+        await appendEvent({
+          ...baseEvent,
+          type: 'payment_success',
+        });
+      } else {
+        await appendEvent({
+          ...baseEvent,
+          type: 'payment_fail',
+        });
+      }
+    } catch (logError) {
+      console.error('Analytics payment callback log error:', logError);
     }
 
     const time = Math.floor(Date.now() / 1000);

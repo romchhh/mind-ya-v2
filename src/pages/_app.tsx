@@ -1,8 +1,11 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 import { Inter } from 'next/font/google';
 import '../styles/variables.css';
 import '../styles/globals.css';
+import { trackEvent } from '@/lib/analyticsClient';
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -11,6 +14,25 @@ const inter = Inter({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      trackEvent({ type: 'pageview', page: url });
+    };
+
+    if (typeof window !== 'undefined') {
+      handleRouteChange(
+        `${window.location.pathname}${window.location.search || ''}`
+      );
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Head>

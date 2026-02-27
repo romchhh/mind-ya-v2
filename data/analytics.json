@@ -1,0 +1,235 @@
+{
+  "events": [
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "55ecc6f5-32e9-486f-9f74-45294af6ddfd",
+      "timestamp": "2026-02-26T15:30:55.276Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "c0f838ca-3fbd-4d9f-8521-0a8321943519",
+      "timestamp": "2026-02-26T15:30:56.494Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "a1900db2-324c-4a3c-9b0b-219c7daaee87",
+      "timestamp": "2026-02-26T15:30:57.960Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "121cb535-af11-496c-bd4d-e888bce11d5a",
+      "timestamp": "2026-02-26T15:30:58.655Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "ccbc48a5-2bf4-450a-84d3-52311c064290",
+      "timestamp": "2026-02-26T15:30:59.172Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/",
+      "id": "6b798f95-b119-4832-8583-318625f295d1",
+      "timestamp": "2026-02-26T15:32:34.629Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=1",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=1",
+      "id": "ede50714-44f7-455c-9b95-b189d30eedaa",
+      "timestamp": "2026-02-26T15:32:35.718Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=2",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=2",
+      "id": "91e2d3ae-5182-4c06-b690-9ed94676ea78",
+      "timestamp": "2026-02-26T15:32:37.781Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/",
+      "id": "91b13be2-6ed8-4a1b-85da-38033e073b31",
+      "timestamp": "2026-02-26T15:32:51.517Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "7bd11901-d80e-49e7-82da-c4ccfa7028d4",
+      "timestamp": "2026-02-26T15:32:53.400Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=3",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=3",
+      "id": "ae30107f-5783-4a11-bdc4-05fae7c98168",
+      "timestamp": "2026-02-26T15:33:04.822Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=4",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=4",
+      "id": "1f8770c1-a536-4494-8a5a-eb812855eb52",
+      "timestamp": "2026-02-26T15:33:06.180Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=5",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=5",
+      "id": "1bdf3f43-03cf-42a0-9b1b-d1df70da8e70",
+      "timestamp": "2026-02-26T15:33:09.234Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=6",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=6",
+      "id": "f04b7ee9-32be-44c4-98c4-75ecdda6d696",
+      "timestamp": "2026-02-26T15:33:11.161Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=7",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=7",
+      "id": "f83017f4-fb5e-4ad4-9069-b12139601c2f",
+      "timestamp": "2026-02-26T15:33:13.982Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=8",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=8",
+      "id": "6446b552-6257-4c2b-a617-55497059d377",
+      "timestamp": "2026-02-26T15:33:16.172Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz?step=9",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz?step=9",
+      "id": "0d37fca8-ea0f-42f7-bea3-06247ba9f2da",
+      "timestamp": "2026-02-26T15:33:18.213Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz/analyzing",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz/analyzing",
+      "id": "390ca324-1f9f-4923-8249-be072185d901",
+      "timestamp": "2026-02-26T15:33:19.465Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "b4bda1a3-10bd-4990-b170-355e91adeada",
+      "timestamp": "2026-02-26T15:33:22.867Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz/plan-ready",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz/plan-ready",
+      "id": "e4df6987-137e-4aab-bad3-aed60057f935",
+      "timestamp": "2026-02-26T15:33:29.611Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "d4157331-ac73-4472-8881-90c63c388ff1",
+      "timestamp": "2026-02-26T15:33:34.888Z"
+    },
+    {
+      "type": "click",
+      "page": "/quiz/plan-ready",
+      "label": "plan-ready:pay-click",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz/plan-ready",
+      "id": "bbc911e1-5e15-4b6e-a328-7355a9c2d707",
+      "timestamp": "2026-02-26T15:33:38.303Z"
+    },
+    {
+      "type": "payment_attempt",
+      "page": "/quiz/plan-ready",
+      "label": "wayforpay",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz/plan-ready",
+      "metadata": {
+        "amount": 149,
+        "orderReference": "MIND_YA_1772120018390_lgeg595"
+      },
+      "id": "9b675b75-1172-4e12-81d7-5ba77f8d9402",
+      "timestamp": "2026-02-26T15:33:38.398Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/quiz/plan-ready",
+      "sessionId": "ef2d3b17-fee3-4079-b8cc-57614fff86b1",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/quiz/plan-ready",
+      "id": "22dce560-6be4-4102-9f6c-b594d8bdbaa5",
+      "timestamp": "2026-02-26T15:33:40.637Z"
+    },
+    {
+      "type": "pageview",
+      "page": "/admin",
+      "sessionId": "d3a5da79-3be4-4867-8d1a-19a3ce6a5ec9",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+      "referer": "http://localhost:3000/admin",
+      "id": "c912f4d5-e6f0-4956-afae-254872ed4f26",
+      "timestamp": "2026-02-26T15:33:42.248Z"
+    }
+  ]
+}
