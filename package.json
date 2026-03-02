@@ -4,9 +4,9 @@
   "private": true,
   "description": "Сайт квіз з шаблонами тесту різних видів",
   "scripts": {
-    "dev": "next dev -p 3000",
+    "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start -p 3000",
+    "start": "next start -p 3001",
     "lint": "next lint",
     "type-check": "tsc --noEmit"
   },
