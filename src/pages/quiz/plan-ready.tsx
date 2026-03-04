@@ -52,6 +52,9 @@ const PlanReady: NextPage = () => {
   // Перевірка статусу оплати в sessionStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      // На кожне повернення / перерендер сторінки гарантуємо, що кнопки не "залипли" в стані завантаження
+      setIsPaymentLoading(false);
+
       // Перевірка чи користувач повернувся з оплати без оплати
       // Перевіряємо при завантаженні сторінки та при зміні query параметрів
       const paymentAttempted = sessionStorage.getItem('paymentAttempted');
