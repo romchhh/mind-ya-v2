@@ -424,81 +424,7 @@ const PlanReady: NextPage = () => {
             </p>
           </div>
 
-          <div className={styles.comparisonSection}>
-            <h2 className={styles.comparisonTitle}>Порівняй сама:</h2>
-
-            <div className={styles.comparisonTable}>
-              <div className={styles.comparisonRow}>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonEmoji}>💊</span>
-                  <span className={styles.comparisonText}>Заспокійливі на місяць</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonPrice}>300-500 грн</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonResult}>Сонливість + звикання</span>
-                </div>
-              </div>
-              <div className={styles.comparisonRow}>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonEmoji}>🍷</span>
-                  <span className={styles.comparisonText}>Вино ввечері</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonPrice}>200-400 грн</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonResult}>Тимчасово, потім гірше</span>
-                </div>
-              </div>
-              <div className={styles.comparisonRow}>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonEmoji}>📱</span>
-                  <span className={styles.comparisonText}>Медитації з Youtube</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonPrice}>0 грн</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonResult}>Не можеш зосередитись — кидаєш</span>
-                </div>
-              </div>
-              <div className={styles.comparisonRow}>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonEmoji}>🧠</span>
-                  <span className={styles.comparisonText}>Психолог</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonPrice}>1200-2500 грн</span>
-                </div>
-                <div className={styles.comparisonCell}>
-                  <span className={styles.comparisonResult}>Ефективно, але дорого і довго</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Коротке резюме оферу під таблицею */}
-            <section className={styles.offerSummarySection}>
-              <p className={styles.offerSummaryTitle}>Mind Я — 3 дні</p>
-              <p className={styles.offerSummaryPrice}>{price} грн (одноразово)</p>
-              <p className={styles.offerSummaryText}>Спокій з 1-го дня. Назавжди твоє.</p>
-            </section>
-          </div>
-
-          <div className={styles.imagineSection}>
-            <h2 className={styles.imagineTitle}>Уяви, як це буде через місяць:</h2>
-            <p className={styles.imagineText}>
-              Ті ж думки, що не дають заснути. <br />
-              Той самий зрив на дитину — і провина після. <br />
-              Те саме виснаження вранці, коли будильник — як вирок.
-            </p>
-            <p className={styles.imagineText}>
-              Ти вже знаєш, що це — хронічний стрес. <br />
-              Тепер ти знаєш, що вихід є. <br />
-              І він коштує менше, ніж дві чашки кави.
-            </p>
-          </div>
+          
 
           <section id="pricing-section" className={styles.pricingSection}>
             <p className={styles.pricingTitle}>
@@ -659,6 +585,82 @@ const PlanReady: NextPage = () => {
               Доступ відкриється автоматично одразу після оплати.
             </p>
           </section>
+
+          <div className={styles.imagineSection}>
+            <h2 className={styles.imagineTitle}>Уяви, як це буде через місяць:</h2>
+            <p className={styles.imagineText}>
+              Ті ж думки, що не дають заснути. <br />
+              Той самий зрив на дитину — і провина після. <br />
+              Те саме виснаження вранці, коли будильник — як вирок.
+            </p>
+            <p className={styles.imagineText}>
+              Ти вже знаєш, що це — хронічний стрес. <br />
+              Тепер ти знаєш, що вихід є. <br />
+              І він коштує менше, ніж дві чашки кави.
+            </p>
+          </div>
+
+          <div className={styles.comparisonSection}>
+            <h2 className={styles.comparisonTitle}>Порівняй сама:</h2>
+
+            <div className={styles.comparisonTable}>
+              <div className={styles.comparisonRow}>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonEmoji}>💊</span>
+                  <span className={styles.comparisonText}>Заспокійливі на місяць</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonPrice}>300-500 грн</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonResult}>Сонливість + звикання</span>
+                </div>
+              </div>
+              <div className={styles.comparisonRow}>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonEmoji}>🍷</span>
+                  <span className={styles.comparisonText}>Вино ввечері</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonPrice}>200-400 грн</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonResult}>Тимчасово, потім гірше</span>
+                </div>
+              </div>
+              <div className={styles.comparisonRow}>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonEmoji}>📱</span>
+                  <span className={styles.comparisonText}>Медитації з Youtube</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonPrice}>0 грн</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonResult}>Не можеш зосередитись — кидаєш</span>
+                </div>
+              </div>
+              <div className={styles.comparisonRow}>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonEmoji}>🧠</span>
+                  <span className={styles.comparisonText}>Психолог</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonPrice}>1200-2500 грн</span>
+                </div>
+                <div className={styles.comparisonCell}>
+                  <span className={styles.comparisonResult}>Ефективно, але дорого і довго</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Коротке резюме оферу під таблицею */}
+            <section className={styles.offerSummarySection}>
+              <p className={styles.offerSummaryTitle}>Mind Я — 3 дні</p>
+              <p className={styles.offerSummaryPrice}>{price} грн (одноразово)</p>
+              <p className={styles.offerSummaryText}>Спокій з 1-го дня. Назавжди твоє.</p>
+            </section>
+          </div>
 
           <div className={styles.testimonialsSection}>
             <div className={styles.ratingImageContainer}>
