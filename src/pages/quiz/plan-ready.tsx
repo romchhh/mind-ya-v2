@@ -14,7 +14,6 @@ const PlanReady: NextPage = () => {
   const [isHeaderTimerExpired] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const [price, setPrice] = useState(189);
-  const [isPaymentLoading, setIsPaymentLoading] = useState(false);
 
   // Відстеження скролу для приховування header
   useEffect(() => {
@@ -52,9 +51,6 @@ const PlanReady: NextPage = () => {
   // Перевірка статусу оплати в sessionStorage
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // На кожне повернення / перерендер сторінки гарантуємо, що кнопки не "залипли" в стані завантаження
-      setIsPaymentLoading(false);
-
       // Перевірка чи користувач повернувся з оплати без оплати
       // Перевіряємо при завантаженні сторінки та при зміні query параметрів
       const paymentAttempted = sessionStorage.getItem('paymentAttempted');
@@ -101,7 +97,6 @@ const PlanReady: NextPage = () => {
   };
   const handlePurchase = async () => {
     trackEvent({ type: 'click', label: 'plan-ready:pay-click' });
-    setIsPaymentLoading(true);
     try {
       // Відстежуємо перехід на оплату
       sessionStorage.setItem('paymentAttempted', 'true');
@@ -134,7 +129,6 @@ const PlanReady: NextPage = () => {
       form.submit();
     } catch (err) {
       console.error('Payment error:', err);
-      setIsPaymentLoading(false);
       sessionStorage.removeItem('paymentAttempted');
       alert('Не вдалося перейти до оплати. Спробуйте пізніше.');
     }
@@ -276,7 +270,7 @@ const PlanReady: NextPage = () => {
             </div>
           )}
           <button className={styles.getPlanButton} onClick={handlePurchase}>
-            {isPaymentLoading ? 'Завантаження...' : `Почати за ${price} грн`}
+            {`Почати за ${price} грн`}
           </button>
         </div>
       </div>
@@ -504,8 +498,8 @@ const PlanReady: NextPage = () => {
 
                 <p className={styles.paymentNoteTop}>Доступ до Telegram-бота відкриється автоматично після оплати.</p>
 
-                <button className={styles.ctaButton} onClick={handlePurchase} disabled={isPaymentLoading}>
-                  {isPaymentLoading ? 'Завантаження...' : `Почати за ${price} грн`}
+                <button className={styles.ctaButton} onClick={handlePurchase}>
+                  {`Почати за ${price} грн`}
                 </button>
                 <p className={styles.paymentMethods}>
                   Безпечна оплата через WayForPay: Visa · Mastercard · Apple Pay · Google Pay · Privat24 · monobank
@@ -875,9 +869,8 @@ const PlanReady: NextPage = () => {
           <button
             className={styles.getMyPlanButton}
             onClick={handlePurchase}
-            disabled={isPaymentLoading}
           >
-            {isPaymentLoading ? 'Завантаження...' : 'Отримати план'}
+            Отримати план
           </button>
         </div>
       </div>
