@@ -1,15 +1,13 @@
 .stickyHeader {
   position: relative;
-  background-color: #ffffff;
-  padding: 18px 20px 10px;
+  z-index: 10;
+  background-color: #fff;
+  padding: 15px 50px;
   width: 100%;
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-  backdrop-filter: blur(8px);
 }
 
 .stickyHeaderHidden {
-  /* більше не приховуємо блок, але клас залишено для сумісності */
+  /* більше не приховуємо хедер, клас залишено для сумісності */
 }
 
 .stickyContent {
@@ -23,21 +21,14 @@
 }
 
 .discountText {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  flex: 1 1 auto;
-  min-width: 220px;
-  max-width: 360px;
-  padding: 8px 14px;
   font-size: 16px;
   font-weight: 600;
-  color: #991b1b;
-  background: linear-gradient(90deg, #fff7ed, #fee2e2);
-  border-radius: 999px;
-  border: 1px solid rgba(248, 113, 113, 0.5);
-  box-shadow: 0 10px 22px rgba(248, 113, 113, 0.25);
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .logoContainer {
@@ -54,59 +45,38 @@
 }
 
 .timer {
-  color: #b91c1c;
+  color: #e44240;
   font-weight: 700;
   font-size: 18px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.3);
-  animation: timerPulse 1.2s ease-in-out infinite alternate;
 }
 
 .getPlanButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #f97316, #ef4444);
-  color: #ffffff;
+  background-color: #e44240;
+  color: #fff;
   border: none;
-  border-radius: 999px;
-  padding: 15px 28px;
+  border-radius: 12px;
+  padding: 15px 25px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  box-shadow: 0 10px 24px rgba(248, 113, 113, 0.45);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(228, 66, 64, 0.3);
   white-space: nowrap;
 }
 
 .getPlanButton:hover {
-  background: linear-gradient(135deg, #fb923c, #f97316);
+  background-color: #d63937;
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(248, 113, 113, 0.55);
+  box-shadow: 0 6px 16px rgba(228, 66, 64, 0.4);
 }
 
 .getPlanButton:active {
   transform: translateY(0);
 }
 
-@keyframes timerPulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.3);
-  }
-  100% {
-    transform: scale(1.04);
-    box-shadow: 0 0 0 4px rgba(248, 113, 113, 0.15);
-  }
-}
-
 .pageWrapper {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 88px;
+  padding-bottom: 0;
   background:
     radial-gradient(circle at top, #e0f2fe 0, rgba(224, 242, 254, 0.2) 35%, transparent 60%),
     radial-gradient(circle at bottom, #fee2e2 0, rgba(254, 226, 226, 0.15) 30%, transparent 55%),
@@ -114,9 +84,9 @@
 }
 
 .main {
-  flex: 1 0 auto;
   background-color: transparent;
-  padding: 40px 20px 40px;
+  padding: 40px 20px;
+  padding-top: 60px;
 }
 
 .container {
@@ -125,7 +95,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 20px 0;
 }
 
 .title {
@@ -133,17 +102,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: radial-gradient(circle at top left, #eef2ff 0, #ffffff 45%, #fee2e2 100%);
-  box-shadow:
-    0 18px 40px rgba(15, 23, 42, 0.12),
-    0 0 0 1px rgba(148, 163, 184, 0.35);
-  font-size: 30px;
-  font-weight: 800;
-  color: #111827;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   line-height: 1.3;
   max-width: 800px;
 }
@@ -164,28 +127,23 @@
 }
 
 .description {
-  font-size: 18px;
-  font-weight: 500;
-  color: #4b5563;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
   text-align: center;
-  margin-bottom: 28px;
-  max-width: 640px;
+  margin-bottom: 20px;
 }
 
 .resultSection {
   width: 100%;
   max-width: 900px;
   margin: 0 auto 32px auto;
-  padding: 32px 28px 28px;
-  border-radius: 24px;
-  background:
-    radial-gradient(circle at top left, #eff6ff 0, #ffffff 45%, #fefce8 100%);
-  box-shadow:
-    0 22px 60px rgba(15, 23, 42, 0.14),
-    0 0 0 1px rgba(148, 163, 184, 0.4);
-  text-align: left;
-  position: relative;
-  overflow: hidden;
+  padding: 32px 28px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+  text-align: center;
 }
 
 .stressLevelRow {
@@ -193,7 +151,7 @@
   align-items: center;
   gap: 10px;
   padding: 8px 18px;
-  margin: 4px 0 18px 0;
+  margin: 12px auto 18px auto;
   border-radius: 999px;
   background-color: #fff5f5;
   border: 1px solid #fecaca;
@@ -224,8 +182,8 @@
   font-size: 18px;
   line-height: 1.6;
   color: #1a1a1a;
-  margin-bottom: 18px;
-  text-align: left;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .resultBlock {
@@ -234,12 +192,10 @@
 }
 
 .resultSubtitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 10px;
-  color: #6b7280;
+  margin-bottom: 8px;
+  color: #000;
 }
 
 .resultList {
@@ -248,7 +204,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   font-size: 16px;
   color: #1a1a1a;
 }
@@ -256,51 +212,23 @@
 .resultItem {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
 }
 
 .resultIcon {
-  margin-top: 2px;
-  width: 22px;
-  height: 22px;
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 20%, #fee2e2, #fecaca);
+  background-color: #fee2e2;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 4px rgba(248, 113, 113, 0.18);
 }
 
 .resultIconSvg {
-  width: 13px;
-  height: 13px;
-}
-
-@media (max-width: 768px) {
-  .resultSection {
-    padding: 24px 18px 22px;
-    border-radius: 20px;
-  }
-
-  .resultIntro {
-    font-size: 16px;
-    margin-bottom: 14px;
-  }
-
-  .resultSubtitle {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-
-  .resultList {
-    font-size: 15px;
-    gap: 8px;
-  }
-
-  .resultIcon {
-    width: 20px;
-    height: 20px;
-  }
+  width: 14px;
+  height: 14px;
 }
 
 .warningSectionTop {
@@ -463,37 +391,6 @@
   margin-top: 2px;
 }
 
-.offerSummarySection {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 30px;
-  padding: 24px 28px;
-  border-radius: 18px;
-  background-color: #ffffff;
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  text-align: center;
-}
-
-.offerSummaryTitle {
-  font-size: 22px;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 6px;
-}
-
-.offerSummaryPrice {
-  font-size: 20px;
-  font-weight: 700;
-  color: #e44240;
-  margin-bottom: 4px;
-}
-
-.offerSummaryText {
-  font-size: 16px;
-  color: #4b5563;
-}
-
 @media (max-width: 768px) {
   .stickyHeader {
     padding: 15px 20px;
@@ -522,10 +419,6 @@
 
   .main {
     padding-top: 40px;
-  }
-
-  .container {
-    padding-top: 16px;
   }
 
   .title {
@@ -646,10 +539,6 @@
   grid-template-columns: 2fr 1.2fr 1.8fr;
   border-bottom: 1px solid #e5e7eb;
   transition: background-color 0.2s ease;
-}
-
-.comparisonRow:last-child {
-  border: 2px solid #3b82f6;
 }
 
 .comparisonRow:hover {
@@ -852,19 +741,6 @@
   border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
-.pricingTitle {
-  font-size: 24px;
-  font-weight: 800;
-  color: #111827;
-  margin: 0 0 8px 0;
-}
-
-.pricingSubtitle {
-  font-size: 16px;
-  color: #4b5563;
-  margin: 0 0 4px 0;
-}
-
 .discountBanner {
   background-color: #e44240;
   color: #fff;
@@ -979,12 +855,6 @@
   color: #1a1a1a;
 }
 
-.planSummary {
-  font-size: 15px;
-  font-weight: 700;
-  color: #111827;
-}
-
 .checkmark {
   flex-shrink: 0;
   width: 20px;
@@ -1015,6 +885,36 @@
 
 .ctaButton:active {
   transform: translateY(0);
+}
+
+.comparisonHighlightBox {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  border: 1px solid #6ee7b7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.comparisonHighlightTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #065f46;
+}
+
+.comparisonHighlightPrice {
+  font-size: 20px;
+  font-weight: 800;
+  color: #047857;
+}
+
+.comparisonHighlightText {
+  font-size: 15px;
+  color: #0f172a;
 }
 
 @media (max-width: 768px) {
@@ -1311,9 +1211,9 @@
 }
 
 .getMyPlanButton:hover {
-  background-color: #d63937;
+  background-color: #059669;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(228, 66, 64, 0.45);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
 .getMyPlanButton:active {
@@ -1626,4 +1526,3 @@
     font-size: 16px;
   }
 }
-
