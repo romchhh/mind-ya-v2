@@ -117,9 +117,6 @@ const PaymentResult: NextPage = () => {
           <button className={styles.buttonPrimary} onClick={handleGoToBot}>
             Перейти до Telegram-бота
           </button>
-          <button className={styles.buttonSecondary} onClick={handleBackToPlan}>
-            Повернутись на сторінку плану
-          </button>
         </div>
       );
     }
