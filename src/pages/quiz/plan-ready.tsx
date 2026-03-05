@@ -455,12 +455,6 @@ const PlanReady: NextPage = () => {
                   </div>
                 </div>
 
-                <div className={styles.benefitsIntro}>
-                  <p>Твій план виходу з хронічної напруги готовий.</p>
-                  <p>Сьогодні -50% — лише 189 грн замість 378 грн.</p>
-                  <p>3-денний план стабілізації + доступ назавжди:</p>
-                </div>
-
                 <ul className={styles.benefitsList}>
                   <li className={styles.benefitItem}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none" className={styles.checkmark}>
@@ -494,7 +488,7 @@ const PlanReady: NextPage = () => {
                   </li>
                 </ul>
 
-                <p className={styles.benefitsNote}>Почати стабілізацію сьогодні — 189 грн. Доступ до Telegram-бота відкриється автоматично після оплати.</p>
+                <p className={styles.benefitsNote}>Почати стабілізацію сьогодні — 189 грн.</p>
 
                 <p className={styles.paymentNoteTop}>Доступ до Telegram-бота відкриється автоматично після оплати.</p>
 
